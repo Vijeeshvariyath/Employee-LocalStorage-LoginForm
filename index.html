@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+     crossorigin="anonymous"
+   />
+   <!-- JavaScript Bundle with Popper -->
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+     crossorigin="anonymous"
+   ></script>
+   <link rel="stylesheet" href="./style.css">
+    <title>Employee localstorage login form</title>
+</head>
+<body>
+    
+
+    <div class="row">
+        <div class="col-4" >
+           
+        </div>
+
+
+        <div class="col-4 border border-dark p-5 mt-4 w-25 ms-5">
+
+            <h4 style="text-align: center;">Employee Form</h4>
+
+            <form action="">
+            <label for="eid"></label>
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Id" id="eid">
+            <label for="ename"></label>
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Name" id="ename">
+            <label for="edesignation"></label>
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Designation" id="edesignation">
+            <label for="eexperience"></label>
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Experience" id="eexperience">
+            <label for="esalary"></label>
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Salary" id="esalary">
+            <label for="elocation"></label>  
+            <input type="text" class="form-control form-control-sm w-75" placeholder="Location" id="elocation">
+            <button type="button" class="btn btn-dark w-25 mt-5 ms-5" id="" onclick="addEmp()">ADD</button>
+
+        </form>
+        </div>
+
+
+        <div class="col-4">
+
+            <form action="" class="mt-5 p-3 ms-5">
+
+                <input type="text" id="searchKey" placeholder="Enter employee id" class="form-control form-control-sm w-50">
+
+                <button type="button"  class="btn btn-primary mt-3  w-50" onclick=" searchEmp()">Search</button>
+
+                <div id="output" class="mt-5">
+
+                </div>
+
+            </form>
+           
+        </div>
+    </div>
+
+
+
+</body>
+<script src="./script.js"></script>
+</html>
